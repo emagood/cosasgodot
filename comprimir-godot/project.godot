@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[addons]
+
+diagnostic_list/auto_refresh=true
+
+[ai_assistant_hub]
+
+base_url="http://127.0.0.1:11434"
+llm_api="ollama_api"
+
+[application]
+
+config/name="comprimir-godot"
+run/main_scene="res://prueba/control.tscn"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/CodeEditorBackground/plugin.cfg", "res://addons/GDBeautifier/plugin.cfg", "res://addons/YouCanDoIt/plugin.cfg", "res://addons/diagnosticlist/plugin.cfg", "res://addons/fuku/plugin.cfg", "res://addons/ridiculous_coding/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/to_do/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "pink",
+"res://clase/": "red",
+"res://prueba/": "orange"
+}
+
+[rendering]
+
+renderer/rendering_method="mobile"

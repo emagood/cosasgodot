@@ -34,4 +34,8 @@ func _ready():
 	aes.finish()
 	# Check CBC
 	assert(decrypted == data.to_utf8_buffer())
+	
+	
+	
+	
 	pass # Replace with function body.

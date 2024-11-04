@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://vco0iiqrl7tw"]
+[gd_scene load_steps=4 format=3 uid="uid://vco0iiqrl7tw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_t0f6e"]
+[ext_resource type="Script" path="res://short.gd" id="2_tlfb2"]
+[ext_resource type="Script" path="res://time.gd" id="3_0qq37"]
 
 [node name="encript" type="Control"]
 layout_mode = 3
@@ -12,3 +14,9 @@ grow_vertical = 2
 
 [node name="main" type="Node" parent="."]
 script = ExtResource("1_t0f6e")
+
+[node name="short" type="Node" parent="."]
+script = ExtResource("2_tlfb2")
+
+[node name="timer" type="Node" parent="."]
+script = ExtResource("3_0qq37")

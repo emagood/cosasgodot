@@ -16,7 +16,7 @@ func _ready():
 	# Decrypt ECB
 	aes.start(AESContext.MODE_ECB_DECRYPT, key.to_utf8_buffer())
 	var decrypted = aes.update(encrypted)
-	prints(decrypted , "   decripted data ecb")
+	prints(decrypted.get_string_from_utf8() , "   decripted data ecb")
 	aes.finish()
 	# Check ECB
 	assert(decrypted == data.to_utf8_buffer())

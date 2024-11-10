@@ -1,1 +1,1 @@
-# A variety of things with Godot Engine, some mine some example from Assets Library
+# A variety of things with Godot Engine, some are from me, some from Assets Library example
